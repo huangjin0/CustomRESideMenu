@@ -15,6 +15,10 @@
 		1B0348311C7477AA00C8BFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B03482F1C7477AA00C8BFB0 /* LaunchScreen.storyboard */; };
 		1B03483C1C7477AA00C8BFB0 /* HJRESideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B03483B1C7477AA00C8BFB0 /* HJRESideMenuTests.m */; };
 		1B0348471C7477AA00C8BFB0 /* HJRESideMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0348461C7477AA00C8BFB0 /* HJRESideMenuUITests.m */; };
+		1B0348571C74796800C8BFB0 /* HJRESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0348561C74796800C8BFB0 /* HJRESideMenu.m */; };
+		1B03485A1C747C4800C8BFB0 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0348591C747C4800C8BFB0 /* LeftViewController.m */; };
+		1B03485D1C747C6600C8BFB0 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B03485C1C747C6600C8BFB0 /* RightViewController.m */; };
+		1B0348601C747CE000C8BFB0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B03485F1C747CE000C8BFB0 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		1B0348421C7477AA00C8BFB0 /* HJRESideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJRESideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0348461C7477AA00C8BFB0 /* HJRESideMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJRESideMenuUITests.m; sourceTree = "<group>"; };
 		1B0348481C7477AB00C8BFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B0348551C74796800C8BFB0 /* HJRESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRESideMenu.h; sourceTree = "<group>"; };
+		1B0348561C74796800C8BFB0 /* HJRESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRESideMenu.m; sourceTree = "<group>"; };
+		1B0348581C747C4800C8BFB0 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		1B0348591C747C4800C8BFB0 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		1B03485B1C747C6600C8BFB0 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		1B03485C1C747C6600C8BFB0 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		1B03485E1C747CE000C8BFB0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1B03485F1C747CE000C8BFB0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,15 @@
 		1B0348201C7477AA00C8BFB0 /* HJRESideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1B0348541C74794200C8BFB0 /* model */,
 				1B0348241C7477AA00C8BFB0 /* AppDelegate.h */,
 				1B0348251C7477AA00C8BFB0 /* AppDelegate.m */,
+				1B03485B1C747C6600C8BFB0 /* RightViewController.h */,
+				1B03485C1C747C6600C8BFB0 /* RightViewController.m */,
+				1B0348581C747C4800C8BFB0 /* LeftViewController.h */,
+				1B0348591C747C4800C8BFB0 /* LeftViewController.m */,
+				1B03485E1C747CE000C8BFB0 /* MainViewController.h */,
+				1B03485F1C747CE000C8BFB0 /* MainViewController.m */,
 				1B0348271C7477AA00C8BFB0 /* ViewController.h */,
 				1B0348281C7477AA00C8BFB0 /* ViewController.m */,
 				1B03482A1C7477AA00C8BFB0 /* Main.storyboard */,
@@ -138,6 +157,15 @@
 				1B0348481C7477AB00C8BFB0 /* Info.plist */,
 			);
 			path = HJRESideMenuUITests;
+			sourceTree = "<group>";
+		};
+		1B0348541C74794200C8BFB0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1B0348551C74796800C8BFB0 /* HJRESideMenu.h */,
+				1B0348561C74796800C8BFB0 /* HJRESideMenu.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0348571C74796800C8BFB0 /* HJRESideMenu.m in Sources */,
+				1B03485A1C747C4800C8BFB0 /* LeftViewController.m in Sources */,
 				1B0348291C7477AA00C8BFB0 /* ViewController.m in Sources */,
 				1B0348261C7477AA00C8BFB0 /* AppDelegate.m in Sources */,
+				1B0348601C747CE000C8BFB0 /* MainViewController.m in Sources */,
 				1B0348231C7477AA00C8BFB0 /* main.m in Sources */,
+				1B03485D1C747C6600C8BFB0 /* RightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

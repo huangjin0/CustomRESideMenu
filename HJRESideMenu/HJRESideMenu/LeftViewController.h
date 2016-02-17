@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LeftViewController.h
 //  HJRESideMenu
 //
 //  Created by huangjin on 16/2/17.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
- #import "HJRESideMenu.h"
-@interface ViewController :HJRESideMenu
 
+@interface LeftViewController : UIViewController
 
 @end
-

@@ -7,15 +7,35 @@
 //
 
 #import "ViewController.h"
-
+#import "HJRESideMenu.h"
+#import "LeftViewController.h"
+#import "MainViewController.h"
+#import "RightViewController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+-(void)awakeFromNib
+{
+    UIViewController*main=[[MainViewController alloc]init];
+     UIViewController*left=[[LeftViewController alloc]init];
+     UIViewController*right=[[RightViewController alloc]init];
+    
+    
+    
+//    HJRESideMenu*menu=[[HJRESideMenu alloc]initWithContentViewController:main LeftMenuViewController:left rightMenuViewController:right];
+    self.contentViewController=main;
+    self.LeftMenuViewController=left;
+    self.rightMenueViewController=right;
+    
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
